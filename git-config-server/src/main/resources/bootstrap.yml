@@ -3,4 +3,4 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/github4codedebugger/config-git
+          uri: https://github.com/amithimani/spring-cloud-config-server
