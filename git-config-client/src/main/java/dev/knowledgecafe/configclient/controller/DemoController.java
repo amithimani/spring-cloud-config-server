@@ -14,8 +14,11 @@ public class DemoController {
     @Value("${db.name}")
     private String dbName;
 
+    @Value("${db.localname}")
+    private String anotherDBName;
+
     @GetMapping(value = "/db")
     public String getDBName(){
-        return String.format("Currently configured Database is  %s", dbName);
+        return String.format("Currently configured Database is  %s, and Another DB name is %s", dbName, anotherDBName);
     }
 }
